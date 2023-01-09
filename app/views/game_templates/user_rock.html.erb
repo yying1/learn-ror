@@ -1,0 +1,16 @@
+<h1>We played rock!</h1>
+
+<!-- without "=" sign this will not show up to user -->
+<% comp_play = ["rock","paper","scissor"].sample%>
+
+<h1>
+  They played <%= comp_play%>. <%= @share_var %>
+</h1>
+
+<% if comp_play == "rock" %>
+  <h1> We tied! </h1>
+<% elsif comp_play == "paper" %>
+  <h1> We lost! </h1>
+<% elsif comp_play == "scissor" %>
+  <h1> We won! </h1>
+<% end %>
